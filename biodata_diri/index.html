@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Hasyim | Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: clamp(16px, 2vw, 20px);
+            font-weight: 600;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            padding: 80px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            background: linear-gradient(to right, #0f172a, #1e293b);
+            color: white;
+        }
+
+        .hero-text {
+            flex: 1 1 400px;
+        }
+
+        .hero-text h2 {
+            font-size: clamp(28px, 5vw, 40px);
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            font-size: clamp(14px, 2vw, 16px);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #38bdf8;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+        }
+
+        .hero img {
+            width: clamp(180px, 30vw, 280px);
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h3 {
+            font-size: clamp(22px, 4vw, 28px);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .about, .skills, .school-content {
+            max-width: 1100px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill {
+            background: #e2e8f0;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .school-box {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .school-box img {
+            width: clamp(250px, 40vw, 450px);
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .school-text {
+            flex: 1 1 350px;
+        }
+
+        .school-text h4 {
+            margin-bottom: 10px;
+            font-size: 22px;
+            color: #111827;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+        }
+
+        /* RESPONSIVE NAVIGATION */
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 5px 10px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .school-box {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media(max-width: 480px) {
+            section {
+                padding: 50px 5%;
+            }
+
+            .hero {
+                padding: 60px 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Muhammad Hasyim</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#school">School</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Hi, I'm Muhammad Hasyim</h2>
+        <p>Saya adalah siswa jurusan Rekayasa Perangkat Lunak (RPL) yang memiliki minat besar di bidang Web Development dan Teknologi. Saya terus mengembangkan skill untuk menjadi Software Engineer profesional.</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+    <img src="hasyim.jpg" alt="Foto Muhammad Hasyim">
+</section>
+
+<section id="about">
+    <h3>About Me</h3>
+    <div class="about">
+        <p>Saya merupakan siswa SMK NEGERI 1 GENDING yang fokus mempelajari pengembangan perangkat lunak. Saya aktif belajar HTML, CSS, JavaScript, dan bahasa pemrograman lainnya untuk membangun website dan aplikasi modern.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h3>My Skills</h3>
+    <div class="skills">
+        <div class="skills-list">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Java</div>
+            <div class="skill">UI/UX Design</div>
+        </div>
+    </div>
+</section>
+
+<section id="school">
+    <h3>My School</h3>
+    <div class="school-content">
+        <div class="school-box">
+            <img src="skolah.png" alt="SMKN 1 Gending">
+            <div class="school-text">
+                <h4>SMKN 1 Gending</h4>
+                <p>Saya bersekolah di SMKN 1 Gending dan mengambil jurusan <strong>Rekayasa Perangkat Lunak (RPL)</strong>. Di jurusan ini saya belajar tentang pembuatan website, aplikasi, database, dan pengembangan software.</p>
+                <p>Jurusan RPL membekali siswa dengan keterampilan teknis serta kesiapan kerja di bidang teknologi informasi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h3>Contact</h3>
+    <div class="about">
+        <p>Email: hasyim@gmail.com</p> 
+        <p>Telepon: 085812458783</p>
+        <p>Lokasi: Probolinngo, Jawa Timur</p>
+    </div>
+</section>
+</body>
+</html>
