@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UFT-8"?>
 <urlset
-xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
   
 <loc>https://syim488.github.io/biodata_Hasyim/</loc>
@@ -9,5 +9,6 @@ xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 <priority>0.8</priority>
 </url>
 </urlset>
+
 
 
